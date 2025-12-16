@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat Room</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="chat-app">
+
+
+<aside class="sidebar">
+<h2>Room Users</h2>
+<ul id="users"></ul>
+</aside>
+
+
+<main class="chat-main">
+<header>Live Chat</header>
+<div id="messages" class="messages"></div>
+<form id="chat-form">
+<button type="button" id="emoji">😊</button>
+<input id="msg" placeholder="Type message..." />
+<button>Send</button>
+</form>
+</main>
+
+
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
